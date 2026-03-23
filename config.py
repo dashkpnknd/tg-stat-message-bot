@@ -1,0 +1,31 @@
+GLOBAL_API_CONFIG = {
+    "api_id": 123456,
+    "api_hash": "your_api_hash_here"
+}
+
+ACCOUNT_PHONE_NUMBERS = [
+    "+10000000000",
+    "+10000000001",
+]
+
+CHANNEL_TO_MONITOR_ID = -1000000000000
+
+GOOGLE_SHEETS_CREDENTIALS_FILE = "credentials.json"
+SPREADSHEET_NAME = "Your Spreadsheet Name"
+WORKSHEET_NAME = "Sheet1"
+
+DATE_COLUMN = 2
+TOTAL_SENT_COLUMN = 3
+TOTAL_REPLIED_COLUMN = 4
+CHANNEL_POSTS_COLUMN = 5
+
+STATS_FILE_PATH = "daily_stats.json"
+SESSIONS_DIR = "sessions"
+
+SCHEDULER_TIMEZONE = "Europe/Moscow"
+REPORT_HOUR = 23
+REPORT_MINUTE = 59
+REPORT_SECOND = 50
+
+LOG_LEVEL = "INFO"
+LOG_FORMAT = "%(asctime)s | %(levelname)s | %(message)s"
