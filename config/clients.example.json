@@ -1,0 +1,26 @@
+{
+  "googleCredentialsPath": "/absolute/path/to/google-service-account.json",
+  "defaultVatRate": 0.22,
+  "defaultBonusMultiplier": 0.5,
+  "vkCredentials": {
+    "cabinet-1": {
+      "clientId": "vk_ads_client_id_from_cabinet",
+      "clientSecret": "vk_ads_client_secret_from_cabinet"
+    }
+  },
+  "clients": [
+    {
+      "clientName": "Название клиента",
+      "spreadsheetId": "google_spreadsheet_id",
+      "sheetName": "ВК Таргет Июнь",
+      "vkSource": "vk_ads_api",
+      "vkCabinetName": "Название кабинета",
+      "vkCredentialsRef": "cabinet-1",
+      "vkStatisticsLevel": "ad_groups",
+      "vkStatisticsPeriod": "day",
+      "vkMetrics": ["spent", "goals"],
+      "vkSpendMetric": "spent",
+      "vkLeadsMetric": "goals"
+    }
+  ]
+}

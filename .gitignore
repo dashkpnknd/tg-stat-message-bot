@@ -1,0 +1,44 @@
+# Secrets and live sessions
+secrets/
+profiles/
+*.pem
+*.key
+*.p12
+
+# Runtime output
+logs/
+tmp/
+*.log
+*.err
+*.exit
+# Local/server configs with real spreadsheet IDs or machine paths
+config/*.local.*
+config/*.server.*
+config/rpa.server.json
+config/discovered_cabinets.server.csv
+# Dependencies
+node_modules/
+# OS/editor artifacts
+._*
+.DS_Store
+# Temporary generated reports
+manual-*.json
+# Runtime and secrets
+.env
+.env.*
+!.env.example
+*.session
+*.session-journal
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+data/
+sessions/
+accounts/
+downloads/
+backups/
+venv/
+.venv/
+__pycache__/
+*.pyc

@@ -1,0 +1,14 @@
+[Unit]
+Description=VK Ads to Google Sheets synchronization
+After=network-online.target vk-browser-1.service vk-browser-2.service vk-browser-3.service
+Wants=network-online.target vk-browser-1.service vk-browser-2.service vk-browser-3.service
+
+[Service]
+Type=oneshot
+User=root
+Environment=TZ=Europe/Moscow
+WorkingDirectory=/opt/vk-ads-sync
+ExecStartPre=/usr/bin/sleep 10
+ExecStart=/usr/local/bin/node bin/rpa_sync_projects.mjs --config config/rpa.server.json
+StandardOutput=append:/opt/vk-ads-sync/logs/sync.log
+StandardError=append:/opt/vk-ads-sync/logs/sync-error.log

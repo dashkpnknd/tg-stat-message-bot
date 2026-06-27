@@ -1,0 +1,2 @@
+status,client_name,cabinet_id,cabinet_name,client_id,client_secret,google_spreadsheet_url,google_spreadsheet_id,sheet_name,notes
+active,Дайте Два,1090548811,Название кабинета из VK,PASTE_CLIENT_ID,PASTE_CLIENT_SECRET,https://docs.google.com/spreadsheets/d/...,spreadsheet_id,ВК Таргет Июнь,

@@ -1,0 +1,15 @@
+[Unit]
+Description=VK Ads browser profile 3
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Environment=HOME=/root
+ExecStart=/usr/bin/google-chrome --headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --disable-extensions --renderer-process-limit=2 --no-first-run --no-default-browser-check --window-size=1440,1000 --remote-debugging-address=127.0.0.1 --remote-debugging-port=9225 --user-data-dir=/opt/vk-ads-sync/profiles/vk-account-3 https://ads.vk.com
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
